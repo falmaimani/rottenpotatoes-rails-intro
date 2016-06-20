@@ -12,7 +12,6 @@ class MoviesController < ApplicationController
        @movies =  Movie.order('title ASC')
        @title_hilite ='hilite'
        
-       
      when 'release'
         @movies =  Movie.order('release_date ASC')
         @release_hilite = 'hilite'
